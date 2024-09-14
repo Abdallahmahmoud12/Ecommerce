@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     
+
+</head>
+<body>
+    
+    <header>
+        <div class="container top-nav">
+            <a href="#" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="search for products">
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart-header">
+                <div  class="icon-cart">
+                    <i onclick="openCart()" class="fa-sharp fa-solid fa-bag-shopping"></i>
+                    <span class="count_item">0</span>
+                </div>
+                <div class="tottal-price">
+                    <p>My Cart</p>
+                    <p class="price_cart_head">$0</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="links container">
+                <i onclick="openmenu()" class="fa-solid fa-bars open_menu"></i>
+                <ul id="menu">
+                    <span onclick="closemenu()" class="bg_overlay"></span>
+                    <i onclick="closemenu()" class="fa-regular fa-circle-xmark close_menu"></i>
+                    <img class="logo_menu" src="img/logo-black.png" alt="">
+                    <li ><a href="index.html">home</a></li>
+                    <li><a href="all_product.html">all products</a></li>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+                <div class="loging_signup">
+                    <a href="login.html">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="sign.html">sign up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <div class="cart ">
+        <div class="top_cart">
+            <h3>my cart <span class="count_item_cart">(0item in cart)</span></h3>
+            <span onclick="closeCart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="items_in_cart">
+            
+            
+        </div>
+        <div class="bottom_cart">
+            <div class="total">
+                <p>cart suptotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+            <div class="button_cart">
+                <a href="checkout.html" class="btn_cart">proceed to checkout</a>
+                <button onclick="closeCart()" class="btn_cart trans_bg">shop more</button>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="checkout">
+        <div class="container">
+            <form action="">
+                <div class="address">
+                    <h2>delivery address</h2>
+                    <div class="inputs">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Enter your Email">
+                        <label for="">Name</label>
+                        <input type="text"  placeholder="Enter your name">
+                        <label for="">Address</label>
+                        <input type="text"  placeholder="Enter your Address">
+                        <label for="">phone</label>
+                        <input type="number"  placeholder="Enter your phone">
+                    </div>
+                </div>
+                <div class="coupon">
+                    <h2>coupon code</h2>
+                    <div class="inputs">
+                        <label for="">coupon code</label>
+                        <input type="text"  placeholder="Enter your coupon">
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="order_sum">
+                <h1>order summary</h1>
+
+                <div class="items">
+                    <div class="item_cart">
+                        <img src="img/product/product-1.jpg" alt="">
+                        <div class="content">
+                            <h4>Original Mobile Android Dual SIM Smart Phone G3</h4>
+                            <p class="price_cart">price : <span>$185</span></p>
+                        </div>
+                    </div>
+
+                    <div class="item_cart">
+                        <img src="img/product/product3.jpg" alt="">
+                        <div class="content">
+                            <h4>sumsung screen</h4>
+                            <p class="price_cart">price : <span>$140</span></p>
+                        </div>
+                    </div>
+
+                    <div class="total">
+                        <p>total</p>
+                        <span>$325.00</span>
+                    </div>
+                    <div class="button_div">
+                        <button>place order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+   
+
+   
+
+
+    <div class="back_to_top">
+        <p>back to top</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>hotline free 24/24</h5>
+                        <h6>(+100) 123 434 3890</h6>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="row">
+                <h4>FAQs & Help</h4>
+                <div class="links">
+                    <a href="">F.A.Q.S</a>
+                    <a href="">Ordering tracking</a>
+                    <a href="">Contacts</a>
+                    <a href="">Events</a>
+                    <a href="">Help center</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+                <div class="links">
+                    <a href="">Delivery Information</a>
+                    <a href="">Discount</a>
+                    <a href="">Payment & shipping</a>
+                    <a href="">Estimated Delivery Time</a>
+                    <a href="">Shipping Guide</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Information</h4>
+                <div class="links">
+                    <a href="">Popular</a>
+                    <a href="">Our services</a>
+                    <a href="">Your Account</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Terms & coodition</a>
+                </div>
+            </div>
+        </div>
+        <div class="button_footer">
+            <div class="container">
+                <p>copyright &copy; <span>Topico.</span> all rights reserved</p>
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  <script src="js/all_products.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
